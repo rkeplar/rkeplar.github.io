@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href= "Data_Portfolio.css">
+    </link>
+    <link rel="html" type="text/html" href="./About_Me.html" media="screen"></link>
+    <link rel="html" type="text/html" href="./Education.html" media="screen"></link>
+    <link rel="html" type="text/html" href="./Tableau.html" media="screen"></link>
+        <title> Data Analytics Portfolio </title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('img').css('transition', 'transform 250ms ease-in-out');
+            $('img').mouseenter(function(){$(this).css('transform', 'scale(1.1)')});
+            $('img').mouseleave(function(){$(this).css('transform', 'scale(1)')});
+
+        })
+
+    </script>
+
+</head>
+<body>
+    <h1 link href="Index.html">
+        Data Analytics Portfolio
+    </h1>
+    <h2>
+        Rachel Keplar
+    </h2>
+    <div class="row">
+        <div class="column"> <a href="About_Me.html"><img src="Portfolio_photo.jpg" alt="Portfolio Photo"></a> <figcaption>About Me</figcaption></div>
+        <div class="column"> <a href="Education.html"><img src="eduPortfolio.png" alt="IUPUI logo"></a><figcaption>Education</figcaption></div>
+        <div class="column"> <a href="Tableau.html"><img src="tableauPortfolio.png" alt="Tableau Viz"></a><figcaption>Tableau Viz</figcaption></div>
+    </div>
+</body>
